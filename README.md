@@ -1,5 +1,28 @@
-# Minimalist example of model integration with CHAP 
-This document demonstrates a minimalist example of how to write a CHAP-compatible forecasting model. The example is written in Python, uses few variables without any lag and a standard machine learning model. It simply learns a linear regression from rain and temperature to disease cases in the same month, without considering any previous disease or climate data. It also assumes and works only with a single region. The model is not meant to accurately capture any interesting relations - the purpose is just to show how CHAP integration works in a simplest possible setting. 
+# Minimalist example of model integration with CHAP
+This document demonstrates a minimalist example of how to write a CHAP-compatible forecasting model. The example is written in Python, uses few variables without any lag and a standard machine learning model. It simply learns a linear regression from rain and temperature to disease cases in the same month, without considering any previous disease or climate data. It also assumes and works only with a single region. The model is not meant to accurately capture any interesting relations - the purpose is just to show how CHAP integration works in a simplest possible setting.
+
+## Setting Up the Environment
+Before running this example, you need to have Python installed on your system.
+
+We recomment that you create a virtual environment to isolate the dependencies for this project. You can do this using the built-in `venv` module in Python. If you are new to virtual environments, you can check out our [guide on virtual environments](https://chap.dhis2.org/kigali-webinar/virtual-environments/).
+
+If you are on Windows, we assume you are using WSL ([see our terminal setup guide here](https://chap.dhis2.org/kigali-webinar/terminal/).
+
+1. Create a virtual environment:
+```bash
+python -m venv venv
+```
+
+2. Activate the virtual environment:
+ ```bash
+ source venv/bin/activate
+ ```
+
+3. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
 
 ## Running the model without CHAP integration
 Before getting a new model to work as part of CHAP, it can be useful to develop and debug it while running it directly a small dataset from file. 
