@@ -112,7 +112,7 @@ entry_points:
 
 ```
 
-After you have installed chap-core ([installation instructions](https://dhis2-chap.github.io/chap-core/chap-cli/chap-core-cli-setup.html), you can run this minimalist model through CHAP as follows (remember to replace '/path/to/your/model/directory' with your local path):
+After you have installed chap-core ([installation instructions](https://dhis2-chap.github.io/chap-core/chap-cli/chap-core-cli-setup.html)), you can run this minimalist model through CHAP as follows (remember to replace '/path/to/your/model/directory' with your local path, which you can see in the terminal by running `pwd`):
 ```
 chap evaluate --model-name /path/to/your/model/directory --dataset-name ISIMIP_dengue_harmonized --dataset-country brazil --report-filename report.pdf --ignore-environment  --debug
 ```
