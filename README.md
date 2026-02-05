@@ -4,9 +4,9 @@ This document demonstrates a minimalist example of how to write a CHAP-compatibl
 ## Setting Up the Environment
 Before running this example, you need to have Python installed on your system.
 
-We recomment that you create a virtual environment to isolate the dependencies for this project. You can do this using the built-in `venv` module in Python. If you are new to virtual environments, you can check out our [guide on virtual environments](https://chap.dhis2.org/kigali-webinar/virtual-environments/).
+We recommend that you create a virtual environment to isolate the dependencies for this project. You can do this using the built-in `venv` module in Python (explained beneath) or by using the tool `uv`. If you are new to virtual environments, you can check out our [guide on virtual environments](https://chap.dhis2.org/tech-intro/virtual-environments/).
 
-If you are on Windows, we assume you are using WSL ([see our terminal setup guide here](https://chap.dhis2.org/kigali-webinar/terminal/).
+If you are on Windows, we assume you are using WSL ([see our terminal setup guide here](https://chap.dhis2.org/tech-intro/terminal/)).
 
 1. Create a virtual environment:
 ```bash
@@ -112,7 +112,7 @@ entry_points:
 
 ```
 
-After you have installed chap-core (see here for installation instructions: https://github.com/dhis2-chap/chap-core), you can run this minimalist model through CHAP as follows (remember to replace '/path/to/your/model/directory' with your local path):
+After you have installed chap-core ([installation instructions](https://dhis2-chap.github.io/chap-core/chap-cli/chap-core-cli-setup.html)), you can run this minimalist model through CHAP as follows (remember to replace '/path/to/your/model/directory' with your local path, which you can see in the terminal by running `pwd`):
 ```
 chap evaluate --model-name /path/to/your/model/directory --dataset-name ISIMIP_dengue_harmonized --dataset-country brazil --report-filename report.pdf --ignore-environment  --debug
 ```
